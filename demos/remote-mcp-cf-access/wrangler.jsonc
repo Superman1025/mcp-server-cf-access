@@ -5,7 +5,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mcp-server-cf-access",
-  "main": "src/index.ts",
+  "main": "src/ableton-bridge.ts", "vpc_services": [{ "binding": "ABLETON_MCP", "service_id": "01a19de5-3fe3-7ab3-a9ca-05f8eb29bea6" }],
   "compatibility_date": "2026-03-10",
   "compatibility_flags": ["nodejs_compat"],
   // The URL MCP clients connect to. Set it to your deployed URL, for example
