@@ -1,5 +1,5 @@
 # Cloudflare AI
-dd
+
 Packages and examples for building AI-powered applications on Cloudflare. Includes providers for the [Vercel AI SDK](https://sdk.vercel.ai/) and [TanStack AI](https://tanstack.com/ai), with support for [Workers AI](https://ai.cloudflare.com/), [AI Gateway](https://developers.cloudflare.com/ai-gateway/), and [AI Search](https://developers.cloudflare.com/ai-search/).
 
 ## Packages
