@@ -1,0 +1,23 @@
+{
+	"name": "mcp-access-self-hosted",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"type-check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/server": "2.3.1",
+		"agents": "^0.29.0",
+		"jose": "^6.2.3",
+		"zod": "^4.4.3"
+	},
+	"devDependencies": {
+		"@types/node": "^26.0.1",
+		"typescript": "6.0.3",
+		"wrangler": "^4.105.0"
+	}
+}
