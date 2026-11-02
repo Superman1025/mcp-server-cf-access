@@ -17,9 +17,9 @@ const apiHandler = {
 		const body = m == "GET" || m == "HEAD" ? undefined : await req.arrayBuffer();
 		try {
 			const r = await e.ABLETON_MCP.fetch(UP + new URL(req.url).search, { method: m, headers: h, body, redirect: "manual" });
-			return new Response(r.body, r);
+			console.log("up " + m + " " + r.status + " " + r.headers.get("content-type")); return new Response(r.body, r);
 		} catch (err) {
-			console.error("bridge", err);
+			console.error("bridge " + m + " " + String(err));
 			return Response.json({ jsonrpc: "2.0", id: null, error: { code: -32000, message: "Ableton bridge unreachable" } }, { status: 502 });
 		}
 	},
